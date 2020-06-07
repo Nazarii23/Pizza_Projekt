@@ -11,10 +11,17 @@
         <Grid>
             <Image Source="source/pizza.jpg"/>
         </Grid>
-        <Label Content="Register" HorizontalAlignment="Left" Margin="415,10,0,0" VerticalAlignment="Top" Height="150" Width="190" FontSize="50"/>
-        <TextBox x:Name="NameField" HorizontalAlignment="Left" Height="50" Margin="125,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
-        <TextBox x:Name="SurnameField" HorizontalAlignment="Center" Height="50" Margin="125,262,590,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
-        <TextBox x:Name="emailField" HorizontalAlignment="Stretch" Height="50" Margin="125,365,590,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
+        <Label Content="Rejestracja" HorizontalAlignment="Left" Margin="415,12,0,0" VerticalAlignment="Top" Height="150" Width="250" FontSize="50"/>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="179,73,0,346.4" VerticalAlignment="Center" Height="80" Width="150" FontSize="50"/>
+        <Label Content="Imię" HorizontalAlignment="Left" Margin="179,151,0,268.4" VerticalAlignment="Center" Height="80" Width="150" FontSize="50"/>
+        <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="179,216,0,203.4" VerticalAlignment="Center" Height="80" Width="250" FontSize="50"/>
+        <Label Content="Hasło" HorizontalAlignment="Left" Margin="179,296,0,123.4" VerticalAlignment="Center" Height="80" Width="250" FontSize="50"/>
+        <TextBox x:Name="loginField" HorizontalAlignment="Left" Height="50" Margin="434,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
+        <TextBox x:Name="nameField" HorizontalAlignment="Center" Height="50" Margin="434,167,281,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
+        <TextBox x:Name="surnameField" HorizontalAlignment="Stretch" Height="50" Margin="434,240,281,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
+        <PasswordBox MaxLength="8" x:Name="hasloField" HorizontalAlignment="Stretch" Height="50" Margin="434,312,281,0"  VerticalAlignment="Top" Width="290" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
+        <Button x:Name="zalkontoButton" Content="Zaloż Konto" HorizontalAlignment="Center"  Margin="398,409,307,10.4" VerticalAlignment="Top" Height="60" Width="250" FontSize="35" Background="BlanchedAlmond" Click="zalkontoButton_Click_3"/>
+
 
 
     </Grid>
