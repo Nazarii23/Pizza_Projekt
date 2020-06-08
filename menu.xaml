@@ -6,28 +6,51 @@
         xmlns:local="clr-namespace:Pizzeria"
         mc:Ignorable="d"
         d:DesignHeight="450" d:DesignWidth="800"
-        Title="Menu" Height="750" Width="820">
+        Title="Menu" Height="750" Width="870">
     <ScrollViewer HorizontalScrollBarVisibility="Auto">
-        <Grid>
-            <Button x:Name="x1_Button" Height="128" Width="176" Background="BlanchedAlmond" Click="x1_Button_Click_4" Margin="0,4,661,496"/>
-            <Button x:Name="x2_Button" Height="128" Width="176" Background="BlanchedAlmond" Click="x2_Button_Click_5" Margin="393,4,268,496"/>
-            <Button x:Name="x3_Button" Height="128" Width="176" Background="BlanchedAlmond" Click="x3_Button_Click_6" Margin="0,214,661,286"/>
-            <Button x:Name="x4_Button" Height="128" Width="176" Background="BlanchedAlmond" Click="x4_Button_Click_7" Margin="393,214,268,286"/>
-            <Button x:Name="x5_Button" Height="128" Width="176" Background="BlanchedAlmond" Click="x5_Button_Click_8" Margin="0,432,661,68"/>
-            <Button x:Name="x6_Button" Height="128" Width="176" Background="BlanchedAlmond" Click="x6_Button_Click_9" Margin="393,432,268,68"/>
-            <Button x:Name="doKosza_Button" Content="Do kosza" Height="40" Width="180" FontSize="30" Background="BlanchedAlmond" Click="doKosza_Button_Click_9" Margin="328,652,383,10"/>
-            <TextBox Name="x1_Text" TextWrapping="NoWrap"  Text="Pizza Primavera" FontSize="25" Height="50" Width="190" Margin="181,0,466,578"></TextBox>
-            <TextBox Name="x1_Text_1" TextWrapping="Wrap"  Text="Z sosem, serem, cebulą i bekonem." FontSize="20" Height="120" Width="190" Margin="206,55,491,453"></TextBox>
-            <TextBox Name="x2_Text" TextWrapping="NoWrap"  Text="Pizza Diavalo" FontSize="25" Height="50" Width="190" Margin="599,0,98,578"></TextBox>
-            <TextBox Name="x2_Text_2" TextWrapping="Wrap"  Text="Czerwone ciasto z brzegami pełnymi sera, kukurydzą, salami, serem, sosem i kabanosem." FontSize="20" Height="140" Width="190" Margin="599,92,98,470"></TextBox>
-            <TextBox Name="x3_Text" TextWrapping="NoWrap"  Text="Pizza Chiken" FontSize="25" Height="50" Width="190" Margin="206,251,491,401"></TextBox>
-            <TextBox Name="x3_Text_3" TextWrapping="Wrap"  Text="Z kurczakiem, ananasem, serem, śliwkami suszonymi i sosem." FontSize="20" Height="120" Width="190" Margin="206,306,491,276"></TextBox>
-            <TextBox Name="x4_Text" TextWrapping="NoWrap"  Text="Pizza Carbonara" FontSize="25" Height="50" Width="190" Margin="599,251,98,401"></TextBox>
-            <TextBox Name="x4_Text_4" TextWrapping="Wrap"  Text="Z serem, pomidoramy, bekonem i cebulą." FontSize="20" Height="120" Width="190" Margin="599,306,98,276"></TextBox>
-            <TextBox Name="x5_Text" TextWrapping="NoWrap"  Text="Pizza Margherita" FontSize="25" Height="50" Width="190" Margin="206,469,491,183"></TextBox>
-            <TextBox Name="x5_Text_5" TextWrapping="Wrap"  Text="Z sosem, serem, bazylią i oregano." FontSize="20" Height="120" Width="190" Margin="206,524,491,58"></TextBox>
-            <TextBox Name="x6_Text" TextWrapping="NoWrap"  Text="Pizza Salame" FontSize="25" Height="50" Width="190" Margin="599,469,98,183"></TextBox>
-            <TextBox Name="x6_Text_6" TextWrapping="Wrap"  Text="Z sosem, serem, oliwkami czarnymi i zielonymi, pieczarkami i salami." FontSize="20" Height="120" Width="190" Margin="599,524,98,58"></TextBox>
+        <Grid Background="#FFB87D7D" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="850*"/>
+                <ColumnDefinition Width="65*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="x1_button" Content="Dodaj do kosza" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="85" Background="BlanchedAlmond" Click="x1_Button_Click_4" Margin="96,180,695,495"/>
+            <Button x:Name="x2_Button" Content="Dodaj do kosza" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="85" Background="BlanchedAlmond" Click="x2_Button_Click_5" Margin="490,180,300,495"/>
+            <Button x:Name="x3_Button" Content="Dodaj do kosza" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="85" Background="BlanchedAlmond" Click="x3_Button_Click_6" Margin="96,396,695,279"/>
+            <Button x:Name="x4_Button" Content="Dodaj do kosza" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="85" Background="BlanchedAlmond" Click="x4_Button_Click_7" Margin="490,396,300,279"/>
+            <Button x:Name="x5_Button" Content="Dodaj do kosza" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="85" Background="BlanchedAlmond" Click="x5_Button_Click_8" Margin="98,617,692,58"/>
+            <Button x:Name="x6_Button" Content="Dodaj do kosza" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="85" Background="BlanchedAlmond" Click="x6_Button_Click_9" Margin="490,617,300,58"/>
+            <Button x:Name="doKosza_Button" Content="Przejść do kosza" HorizontalAlignment="Center" Height="40" Width="230" FontSize="30" Background="BlanchedAlmond" Click="doKosza_Button_10" Margin="328,654,318,11"/>
+            <Label x:Name="x1_Label" Height="128" Width="176" Margin="52,42,648,535">
+                <Image Source="source/primavera.png" Stretch="Fill"/>
+            </Label>
+            <Label x:Name="x2_label" Height="128" Width="176" Margin="445,42,255,535">
+                <Image Source="source/pizza diavola.jpg" Stretch="Fill"/>
+            </Label>
+            <Label x:Name="x3_Label" Height="128" Width="176" Margin="52,252,648,325">
+                <Image Source="source/pizza chicken.jpg" Stretch="Fill"/>
+            </Label>
+            <Label x:Name="x4_Label" Height="128" Width="176" Margin="445,252,255,325">
+                <Image Source="source/carbonara.jpg" Stretch="Fill"/>
+            </Label>
+            <Label x:Name="x5_Label" Height="128" Width="176" Margin="52,470,648,107">
+                <Image Source="source/margherita.jpg" Stretch="Fill"/>
+            </Label>
+            <Label x:Name="x6_Label" Height="128" Width="176" Margin="445,470,255,107">
+                <Image Source="source/Salame.jpg" Stretch="Fill"/>
+            </Label>
+            <TextBox Name="x1_Text" TextWrapping="NoWrap" HorizontalContentAlignment="Center" Text="Pizza Primavera" FontSize="25" Height="50" Width="190" Margin="233,38,453,617"></TextBox>
+            <TextBox Name="x1_Text_1" TextWrapping="Wrap" HorizontalContentAlignment="Center" Text="Z sosem, serem, cebulą i bekonem." FontSize="20" Height="120" Width="190" Margin="233,94,453,491"></TextBox>
+            <TextBox Name="x2_Text" TextWrapping="NoWrap" HorizontalContentAlignment="Center" Text="Pizza Diavalo" FontSize="25" Height="50" Width="190" Margin="626,38,60,617"></TextBox>
+            <TextBox Name="x2_Text_2" TextWrapping="Wrap" HorizontalContentAlignment="Center" Text="Czerwone ciasto z brzegami pełnymi sera, kukurydzą, salami, serem, sosem i kabanosem." FontSize="20" Height="140" Width="190" Margin="626,94,60,471"></TextBox>
+            <TextBox Name="x3_Text" TextWrapping="NoWrap" HorizontalContentAlignment="Center" Text="Pizza Chiken" FontSize="25" Height="50" Width="190" Margin="233,252,453,403"></TextBox>
+            <TextBox Name="x3_Text_3" TextWrapping="Wrap" HorizontalContentAlignment="Center" Text="Z kurczakiem, ananasem, serem, śliwkami suszonymi i sosem." FontSize="20" Height="120" Width="190" Margin="233,308,453,277"></TextBox>
+            <TextBox Name="x4_Text" TextWrapping="NoWrap" HorizontalContentAlignment="Center" Text="Pizza Carbonara" FontSize="25" Height="50" Width="190" Margin="626,252,60,403"></TextBox>
+            <TextBox Name="x4_Text_4" TextWrapping="Wrap" HorizontalContentAlignment="Center" Text="Z serem, pomidoramy, bekonem i cebulą." FontSize="20" Height="120" Width="190" Margin="626,308,60,277"></TextBox>
+            <TextBox Name="x5_Text" TextWrapping="NoWrap" HorizontalContentAlignment="Center" Text="Pizza Margherita" FontSize="25" Height="50" Width="190" Margin="233,470,453,185"></TextBox>
+            <TextBox Name="x5_Text_5" TextWrapping="Wrap" HorizontalContentAlignment="Center" Text="Z sosem, serem, bazylią i oregano." FontSize="20" Height="120" Width="190" Margin="233,526,453,59"></TextBox>
+            <TextBox Name="x6_Text" TextWrapping="NoWrap" HorizontalContentAlignment="Center" Text="Pizza Salame" FontSize="25" Height="50" Width="190" Margin="626,470,60,185"></TextBox>
+            <TextBox Name="x6_Text_6" TextWrapping="Wrap" HorizontalContentAlignment="Center" Text="Z sosem, serem, oliwkami czarnymi i zielonymi, pieczarkami i salami." FontSize="20" Height="120" Width="190" Margin="626,526,60,59"></TextBox>
         </Grid>
 
     </ScrollViewer>

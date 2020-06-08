@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="logowanie" Height="450" Width="800">
     <Grid Margin="0,0,-5,0.6">
+        <Grid>
+            <Image Source="source/pizza_login.jpg"/>
+        </Grid>
         <Label Content="Napolitana" HorizontalAlignment="Left" Margin="278,10,0,0" VerticalAlignment="Top" Height="150" Width="250" FontSize="50"/>
         <Label Content="Login" HorizontalAlignment="Left" Margin="101,101,0,237.4" VerticalAlignment="Center" Height="80" Width="150" FontSize="50"/>
         <Label Content="Hasło" HorizontalAlignment="Left" Margin="101,181,0,157.4" VerticalAlignment="Center" Height="80" Width="150" FontSize="50"/>
