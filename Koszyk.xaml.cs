@@ -17,9 +17,19 @@ namespace Pizzeria
     /// <summary>
     /// Interaction logic for Window3.xaml
     /// </summary>
-    public partial class Window3 : Window
+    public partial class Koszyk : Window
     {
-        public Window3()
+        public static int suma_zamowienia;
+        public static Dictionary<string, int> dane = new Dictionary<string, int>() 
+        {
+            {"Pizza Primavera", 0},
+            {"Pizza Diavalo", 0},
+            {"Pizza Chiken", 0},
+            {"Pizza Carbonara", 0},
+            {"Pizza Margherita", 0},
+            {"Pizza Salame", 0},
+        };
+        public Koszyk()
         {
             InitializeComponent();
         }

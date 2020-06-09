@@ -6,3 +6,4 @@ C:\Users\Nazar\Desktop\Gajetski\PROJEKT\Pizzeria\obj\Debug\menu.g.cs
 C:\Users\Nazar\Desktop\Gajetski\PROJEKT\Pizzeria\obj\Debug\App.g.cs
 C:\Users\Nazar\Desktop\Gajetski\PROJEKT\Pizzeria\obj\Debug\Pizzeria_MarkupCompile.cache
 C:\Users\Nazar\Desktop\Gajetski\PROJEKT\Pizzeria\obj\Debug\Pizzeria_MarkupCompile.lref
+C:\Users\Nazar\Desktop\Gajetski\PROJEKT\Pizzeria\obj\Debug\Koszyk.g.cs

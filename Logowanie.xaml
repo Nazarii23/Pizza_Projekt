@@ -15,7 +15,7 @@
         <Label Content="Hasło" HorizontalAlignment="Left" Margin="101,181,0,157.4" VerticalAlignment="Center" Height="80" Width="150" FontSize="50"/>
         <TextBox x:Name="loginField" HorizontalAlignment="Left" Height="50" Margin="278,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
         <PasswordBox MaxLength="8" x:Name="hasloField" HorizontalAlignment="Stretch" Height="50" Margin="278,194,229,0"  VerticalAlignment="Top" Width="290" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
-        <Button x:Name="niekontoButton" Content="Nie mam konta" HorizontalAlignment="Center"  Margin="101,333,446,0" VerticalAlignment="Top" Height="60" Width="250" FontSize="35" Background="BlanchedAlmond" Click="niekontoButton_Click_1"/>
+        <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Center"  Margin="101,333,446,0" VerticalAlignment="Top" Height="60" Width="250" FontSize="35" Background="BlanchedAlmond" Click="LoginButton_Click_1"/>
         <Button x:Name="registrButton" Content="Rejestracja" HorizontalAlignment="Center"  Margin="442,333,105,0" VerticalAlignment="Top" Height="60" Width="250" FontSize="35" Background="BlanchedAlmond" Click="registrButton_Click_2"/>
     </Grid>
 </Window>

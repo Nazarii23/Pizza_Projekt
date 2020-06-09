@@ -17,11 +17,38 @@ namespace Pizzeria
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class logowanie : Window
     {
-        public Window1()
+        public logowanie()
         {
             InitializeComponent();
+        }
+
+        private void LoginButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (loginField.Text == "")
+            {
+                MessageBox.Show("Plese enter your email");
+                return;
+            }
+            if (hasloField.Password == "")
+            {
+                MessageBox.Show("Plese enter your pass");
+                return;
+            }
+            else
+            {
+                this.Hide();
+                Menu m = new Menu();
+                m.Show();
+            }
+        }
+
+        private void registrButton_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Registr reg = new Registr();
+            reg.Show();
         }
     }
 }
