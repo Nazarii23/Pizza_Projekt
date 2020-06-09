@@ -19,7 +19,7 @@
             <Button x:Name="PizChi_Button" Content="Dodaj do kosza" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="85" Background="BlanchedAlmond" Click="dodajPizzeClick" Margin="96,396,695,279"/>
             <Button x:Name="PizCar_Button" Content="Dodaj do kosza" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="85" Background="BlanchedAlmond" Click="dodajPizzeClick" Margin="490,396,300,279"/>
             <Button x:Name="PizMar_Button" Content="Dodaj do kosza" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="85" Background="BlanchedAlmond" Click="dodajPizzeClick" Margin="98,617,692,58"/>
-            <Button x:Name="PizSal_Button" Content="Dodaj do kosza" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="85" Background="BlanchedAlmond" Click="x6_dodajPizzeClick" Margin="490,617,300,58"/>
+            <Button x:Name="PizSal_Button" Content="Dodaj do kosza" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="85" Background="BlanchedAlmond" Click="dodajPizzeClick" Margin="490,617,300,58"/>
             <Button x:Name="doKosza_Button" Content="Przejść do kosza" HorizontalAlignment="Center" Height="40" Width="230" FontSize="30" Background="BlanchedAlmond" Click="doKoszaClick" Margin="328,654,318,11"/>
             <Label x:Name="x1_Label" Height="128" Width="176" Margin="52,42,648,535">
                 <Image Source="source/primavera.png" Stretch="Fill"/>

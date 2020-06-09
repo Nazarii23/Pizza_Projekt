@@ -67,5 +67,12 @@ namespace Pizzeria
                     break;
             }
         }
+
+        private void doKoszaClick(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Koszyk kosz = new Koszyk();
+            kosz.Show();
+        }
     }
 }

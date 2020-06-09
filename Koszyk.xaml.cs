@@ -14,12 +14,9 @@ using System.Windows.Shapes;
 
 namespace Pizzeria
 {
-    /// <summary>
-    /// Interaction logic for Window3.xaml
-    /// </summary>
     public partial class Koszyk : Window
     {
-        public static int suma_zamowienia;
+        public static int suma_zamowienia = 0;
         public static Dictionary<string, int> dane = new Dictionary<string, int>() 
         {
             {"Pizza Primavera", 0},
@@ -31,7 +28,22 @@ namespace Pizzeria
         };
         public Koszyk()
         {
-            InitializeComponent();
+            InitializeComponent();             
         }
+
+        private void Usun_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var item in dane)
+            {
+                dane[item.Key] = 0;
+            }
+            suma_zamowienia = 0;
+        }
+
+        private void Zamow_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }
