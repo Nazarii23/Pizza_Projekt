@@ -142,5 +142,20 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\pizza_login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\margherita.jpg" />
+    <Resource Include="Resources\pizza chicken.jpg" />
+    <Resource Include="Resources\pizza diavola.jpg" />
+    <Resource Include="Resources\pizza.jpg" />
+    <Resource Include="Resources\pizza_menu.jpg" />
+    <Resource Include="Resources\primavera.png" />
+    <Resource Include="Resources\Salame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\carbonara.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

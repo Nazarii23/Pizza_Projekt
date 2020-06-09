@@ -8,9 +8,9 @@
         Title="Koszyk" Height="850" Width="600">
 
     <Grid Height="765" Width="475">
-        <Grid>
-            <Image Source="source/pizza diavola.jpg" Stretch="Fill"/>
-        </Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/pizza diavola.jpg" Stretch="Fill"/>
+        </Grid.Background>
         <Label x:Name="Adres" Content="Adres:" FontSize="24" HorizontalAlignment="Left" Height="50" Width="160" Background="BlanchedAlmond"  Margin="21,54,0,654"/>
         <Label x:Name="Telefon" Content="Telefon:" FontSize="24" HorizontalAlignment="Left" Height="50" Width="160" Background="BlanchedAlmond" Margin="21,146,0,572"/>
         <Label x:Name="Suma" Content="Suma:" FontSize="30" VerticalAlignment="Center" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Width="135" Background="BlanchedAlmond" Margin="173,580,0,133" Height="52"/>

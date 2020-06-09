@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("registr.xaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/carbonara.jpg")]
 
 
