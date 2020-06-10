@@ -43,34 +43,33 @@ namespace Pizzeria
             {
                 case "PizPri_Button":
                     Koszyk.suma_zamowienia += Pizza_Primavera.PizzaCost;
-                    Koszyk.dane["Pizza Primavera"] += 1;
+                    Koszyk.pizPriCount += 1;
                     break;
                 case "PizDia_Button":
                     Koszyk.suma_zamowienia += Pizza_Diavalo.PizzaCost;
-                    Koszyk.dane["Pizza Diavalo"] += 1;
+                    Koszyk.pizDiaCount += 1;
                     break;
                 case "PizChi_Button":
                     Koszyk.suma_zamowienia += Pizza_Chiken.PizzaCost;
-                    Koszyk.dane["Pizza Chiken"] += 1;
+                    Koszyk.pizChiCount += 1;
                     break;
                 case "PizCar_Button":
                     Koszyk.suma_zamowienia += Pizza_Carbonara.PizzaCost;
-                    Koszyk.dane["Pizza Carbonara"] += 1;
+                    Koszyk.pizCarCount += 1;
                     break;
                 case "PizMar_Button":
                     Koszyk.suma_zamowienia += Pizza_Margherita.PizzaCost;
-                    Koszyk.dane["Pizza Margherita"] += 1;
+                    Koszyk.pizMarCount += 1;
                     break;
                 case "PizSal_Button":
                     Koszyk.suma_zamowienia += Pizza_Salame.PizzaCost;
-                    Koszyk.dane["Pizza Salame"] += 1;
+                    Koszyk.pizSalCount += 1;
                     break;
             }
         }
 
         private void doKoszaClick(object sender, RoutedEventArgs e)
         {
-            this.Hide();
             Koszyk kosz = new Koszyk();
             kosz.Show();
         }

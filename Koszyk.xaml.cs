@@ -17,33 +17,52 @@ namespace Pizzeria
     public partial class Koszyk : Window
     {
         public static int suma_zamowienia = 0;
-        public static Dictionary<string, int> dane = new Dictionary<string, int>() 
-        {
-            {"Pizza Primavera", 0},
-            {"Pizza Diavalo", 0},
-            {"Pizza Chiken", 0},
-            {"Pizza Carbonara", 0},
-            {"Pizza Margherita", 0},
-            {"Pizza Salame", 0},
-        };
+        public static int pizPriCount = 0;
+        public static int pizMarCount = 0;
+        public static int pizSalCount = 0;
+        public static int pizCarCount = 0;
+        public static int pizChiCount = 0;
+        public static int pizDiaCount = 0;
         public Koszyk()
         {
-            InitializeComponent();             
+            InitializeComponent();
+            Suma.Content = "Suma: " + suma_zamowienia.ToString() + " zł";
+            PizSalCount.Content = "x " + pizSalCount.ToString();
+            PizPriCount.Content = "x " + pizPriCount.ToString();
+            PizMarCount.Content = "x " + pizMarCount.ToString();
+            PizDiaCount.Content = "x " + pizDiaCount.ToString();
+            PizChiCount.Content = "x " + pizChiCount.ToString();
+            PizCarCount.Content = "x " + pizCarCount.ToString();
         }
 
         private void Usun_Click(object sender, RoutedEventArgs e)
         {
-            foreach (var item in dane)
-            {
-                dane[item.Key] = 0;
-            }
             suma_zamowienia = 0;
+            pizPriCount = 0;
+            pizMarCount = 0;
+            pizSalCount = 0;
+            pizCarCount = 0;
+            pizChiCount = 0;
+            pizDiaCount = 0;
+            this.Hide();
         }
 
         private void Zamow_Click(object sender, RoutedEventArgs e)
         {
-
+            if (AdresName.Text == "" || TelefonName.Text == "")
+            {
+                MessageBox.Show("Wprowadź wszystkie potrzebne dane!");
+            }
+            else
+            {
+                MessageBox.Show("Twoje zamówienie zostało przyjęte!");
+            }
+            
         }
 
+        private void Return_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
