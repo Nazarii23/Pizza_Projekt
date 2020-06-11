@@ -51,6 +51,13 @@
                     <ImageBrush ImageSource="Resources/Salame.jpg" Stretch="Fill"/>
                 </Label.Background>
             </Label>
+            <Label Content="30 zł" HorizontalAlignment="Left" Margin="186,180,0,495" VerticalAlignment="Center" Height="30" Width="42" FontSize="15" Background="#FF7DC19F"/>
+            <Label Content="45 zł" HorizontalAlignment="Left" Margin="580,180,0,495" VerticalAlignment="Center" Height="30" Width="41" FontSize="15" Background="#FF7DC19F"/>
+            <Label Content="60 zł" HorizontalAlignment="Left" Margin="186,396,0,279" VerticalAlignment="Center" Height="30" Width="42" FontSize="15" Background="#FF7DC19F"/>
+            <Label Content="35 zł" HorizontalAlignment="Left" Margin="580,396,0,279" VerticalAlignment="Center" Height="30" Width="41" FontSize="15" Background="#FF7DC19F"/>
+            <Label Content="20 zł" HorizontalAlignment="Left" Margin="188,617,0,59"  VerticalAlignment="Center" Height="29" Width="40" FontSize="15" Background="#FF7DC19F"/>
+            <Label Content="40 zł" HorizontalAlignment="Left" Margin="580,617,0,59"  VerticalAlignment="Center" Height="29" Width="41" FontSize="15" Background="#FF7DC19F"/>
+
             <TextBox Name="PizPri" TextWrapping="NoWrap" HorizontalContentAlignment="Center" Text="Pizza Primavera" FontSize="25" Height="50" Width="190" Margin="233,38,453,617"></TextBox>
             <TextBox Name="PizPriDes" TextWrapping="Wrap" HorizontalContentAlignment="Center" Text="Z sosem, serem, cebulą i bekonem." FontSize="20" Height="120" Width="190" Margin="233,94,453,491"></TextBox>
             <TextBox Name="PizDia" TextWrapping="NoWrap" HorizontalContentAlignment="Center" Text="Pizza Diavalo" FontSize="25" Height="50" Width="190" Margin="626,38,60,617"></TextBox>

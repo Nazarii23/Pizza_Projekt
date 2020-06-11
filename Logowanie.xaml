@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="Resources/pizza_login.jpg"/>
         </Grid.Background>
-        <Label Content="Napolitana" HorizontalAlignment="Left" Margin="278,10,0,0" VerticalAlignment="Top" Height="150" Width="250" FontSize="50"/>
+        <Label Content="Napolitana" HorizontalAlignment="Left" Margin="278,10,0,0" VerticalAlignment="Top" Height="150" Width="250" FontSize="50" />
         <Label Content="Login" HorizontalAlignment="Left" Margin="101,101,0,237.4" VerticalAlignment="Center" Height="80" Width="150" FontSize="50"/>
         <Label Content="Hasło" HorizontalAlignment="Left" Margin="101,181,0,157.4" VerticalAlignment="Center" Height="80" Width="150" FontSize="50"/>
         <TextBox x:Name="loginField" HorizontalAlignment="Left" Height="50" Margin="278,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
