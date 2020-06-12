@@ -17,10 +17,10 @@
         <Label Content="Imię" HorizontalAlignment="Left" Margin="260,153,0,248.4" VerticalAlignment="Center" Height="67" Width="150" FontSize="50"/>
         <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="197,220,0,171.4" VerticalAlignment="Center" Height="77" Width="233" FontSize="50"/>
         <Label Content="Hasło" HorizontalAlignment="Left" Margin="243,297,0,108.4" VerticalAlignment="Center" Height="63" Width="182" FontSize="50"/>
-        <TextBox x:Name="loginField" HorizontalAlignment="Left" Height="50" Margin="429,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
-        <TextBox x:Name="nameField" HorizontalAlignment="Center" Height="50" Margin="429,179,273,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
-        <TextBox x:Name="surnameField" HorizontalAlignment="Stretch" Height="50" Width="295" Margin="429,243,273,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
-        <PasswordBox MaxLength="8" x:Name="hasloField" HorizontalAlignment="Stretch" Height="50" Width="295" Margin="430,312,273,0"  VerticalAlignment="Top" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="22"/>
+        <TextBox x:Name="loginField" HorizontalAlignment="Left" Height="50" Margin="429,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="22"/>
+        <TextBox x:Name="nameField" HorizontalAlignment="Center" Height="50" Margin="429,179,273,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="22"/>
+        <TextBox x:Name="surnameField" HorizontalAlignment="Stretch" Height="50" Width="295" Margin="429,243,273,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="22"/>
+        <PasswordBox MaxLength="8" x:Name="hasloField" HorizontalAlignment="Stretch" Height="50" Width="295" Margin="430,312,273,0"  VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="22"/>
         <Button x:Name="zalkontoButton" Content="Zaloż Konto" HorizontalAlignment="Center"  Margin="415,397,332,0" VerticalAlignment="Top" Height="61" Width="250" FontSize="35" Background="BlanchedAlmond" Click="zalkontoButton_Click_3"/>
 
 

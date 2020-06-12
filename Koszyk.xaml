@@ -29,8 +29,8 @@
         <Label x:Name="PizChiCount" Content="x 0" FontSize="30" VerticalAlignment="Center" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Width="61" Background="BlanchedAlmond" Margin="404,524,0,190" Height="51" RenderTransformOrigin="0.5,0.5"/>
         <Label x:Name="PizCarCount" Content="x 0" FontSize="30" VerticalAlignment="Center" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Width="61" Background="BlanchedAlmond" Margin="404,359,0,352" Height="54" RenderTransformOrigin="0.5,0.5"/>
 
-        <TextBox x:Name="AdresName" HorizontalAlignment="Left"  Height="50" Margin="206,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch" FontSize="22"/>
-        <wpfx:MaskedTextBox x:Name="TelefonName" HorizontalAlignment="Left"  Height="50" Margin="206,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch" FontSize="22" Mask="(+48) 000-000-000" />
+        <TextBox x:Name="AdresName" HorizontalAlignment="Left"  Height="50" Margin="206,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="22"/>
+        <wpfx:MaskedTextBox x:Name="TelefonName" HorizontalAlignment="Left"  Height="50" Margin="206,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="22" Mask="(+48) 000-000-000" />
 
         <Button x:Name="Return" Content="X" HorizontalAlignment="Left"  Margin="0,716,0,0" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" Width="40" FontSize="35" Background="BlanchedAlmond" Click="Return_Click"/>
         <Button x:Name="Zamow" Content="ZAMÓW" HorizontalAlignment="Center"  Margin="158,652,145,67" VerticalAlignment="Center" HorizontalContentAlignment="Center" Width="172" FontSize="35" Background="BlanchedAlmond" Height="46" Click="Zamow_Click"/>

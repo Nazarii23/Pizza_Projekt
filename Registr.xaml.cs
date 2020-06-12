@@ -28,20 +28,20 @@ namespace Pizzeria
         {
             if (loginField.Text == "")
             {
-                MessageBox.Show("Plese enter your login");
+                MessageBox.Show("Login jest wymagane");
                 return;
             }else if (nameField.Text == "")
             {
-                MessageBox.Show("Plese enter your name");
+                MessageBox.Show("Imię jest wymagane");
                 return;
             }else if (surnameField.Text == "")
             {
-                MessageBox.Show("Plese enter your surname");
+                MessageBox.Show("Nazwisko jest wymagane");
                 return;
             }
             else if (hasloField.Password == "")
             {
-                MessageBox.Show("Plese enter your password");
+                MessageBox.Show("Haslo jest wymagane");
                 return;
             }
             else

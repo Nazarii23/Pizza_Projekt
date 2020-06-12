@@ -28,12 +28,12 @@ namespace Pizzeria
         {
             if (loginField.Text == "")
             {
-                MessageBox.Show("Plese enter your email");
+                MessageBox.Show("Login jest wymagane");
                 return;
             }
             if (hasloField.Password == "")
             {
-                MessageBox.Show("Plese enter your pass");
+                MessageBox.Show("Haslo jest wymagane");
                 return;
             }
             else
