@@ -1,5 +1,8 @@
-﻿using System;
+﻿using System.Data.SqlClient;
+using System.Data.Entity;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +22,12 @@ namespace Pizzeria
     /// </summary>
     public partial class Registr : Window
     {
+        DB_PizzeriaEntities DB;
+
         public Registr()
         {
             InitializeComponent();
+            
         }
 
         private void zalkontoButton_Click_3(object sender, RoutedEventArgs e)
@@ -49,6 +55,24 @@ namespace Pizzeria
                 this.Hide();
                 Menu m = new Menu();
                 m.Show();
+            }
+
+            DB = new DB_PizzeriaEntities();
+            Kontakty acc = new Kontakty();
+            try
+            {
+                acc.Login = loginField.Text;
+                acc.Imię = nameField.Text;
+                acc.Nazwisko = surnameField.Text;
+                acc.Haslo = hasloField.Password;
+                DB.Kontakties.Add(acc);
+                DB.SaveChanges();
+            }
+            catch (Exception ef)
+            {
+                
+                MessageBox.Show(ef.Message);
+
             }
         }
     }

@@ -38,9 +38,36 @@ namespace Pizzeria
             }
             else
             {
-                this.Hide();
-                Menu m = new Menu();
-                m.Show();
+                DB_PizzeriaEntities DBe = new DB_PizzeriaEntities();
+                if (loginField.Text != string.Empty || hasloField.Password != String.Empty)
+                {
+                    try
+                    {
+                        var kontakt = DBe.Kontakties.FirstOrDefault(a => a.Login.Equals(loginField.Text));
+                        if (kontakt != null)
+                        {
+                            if (kontakt.Haslo.Equals(hasloField.Password))
+                            {
+                                this.Hide();
+                                Menu m = new Menu();
+                                m.Show();
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("Twój Login i Haslo nie jest prawidłowe");
+                                return;
+                            }
+                        }
+                    }
+                    catch (Exception cf)
+                    {
+                        MessageBox.Show(cf.Message);
+                    }
+
+
+
+                }
             }
         }
 

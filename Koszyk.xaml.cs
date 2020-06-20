@@ -16,6 +16,8 @@ namespace Pizzeria
 {
     public partial class Koszyk : Window
     {
+        DB_PizzeriaEntities DBE;
+
         public static int suma_zamowienia = 0;
         public static int pizPriCount = 0;
         public static int pizMarCount = 0;
@@ -57,7 +59,23 @@ namespace Pizzeria
             {
                 MessageBox.Show("Twoje zamówienie zostało przyjęte!");
             }
-            
+
+            DBE = new DB_PizzeriaEntities();
+            Zamówienia ac = new Zamówienia();
+            try
+            {
+                ac.Adres = AdresName.Text;
+                ac.Telefon = TelefonName.Text;
+                DBE.Zamówienia.Add(ac);
+                DBE.SaveChanges();
+            }
+            catch (Exception ef)
+            {
+
+                MessageBox.Show(ef.Message);
+
+            }
+
         }
 
         private void Return_Click(object sender, RoutedEventArgs e)
