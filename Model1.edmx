@@ -29,7 +29,7 @@
           <Key>
             <PropertyRef Name="id_zamów" />
           </Key>
-          <Property Name="id_zamów" Type="int" Nullable="false" />
+          <Property Name="id_zamów" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="id_kontakt" Type="int" Nullable="false" />
           <Property Name="Adres" Type="nchar" MaxLength="30" />
           <Property Name="Telefon" Type="nchar" MaxLength="20" />
@@ -85,7 +85,7 @@
           <Key>
             <PropertyRef Name="id_zamów" />
           </Key>
-          <Property Name="id_zamów" Type="Int32" Nullable="false" />
+          <Property Name="id_zamów" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="id_kontakt" Type="Int32" Nullable="false" />
           <Property Name="Adres" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
           <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
